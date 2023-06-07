@@ -25,7 +25,7 @@ ARG REDISPORT
 ARG REDISUSER
 ARG REDISPASSWORD
 
-COPY --from=build /home/app/target/workshop16-0.0.1-SNAPSHOT.jar /usr/local/lib/workshop16.jar
+COPY --from=build /home/app/target/workshop17-0.0.1-SNAPSHOT.jar /usr/local/lib/workshop17.jar
 
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "/usr/local/lib/workshop16.jar"]
+ENTRYPOINT ["java", "-jar", "/usr/local/lib/workshop17.jar"]
