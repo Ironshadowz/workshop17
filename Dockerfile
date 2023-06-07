@@ -25,7 +25,7 @@ ARG REDISPORT
 ARG REDISUSER
 ARG REDISPASSWORD
 
-COPY --from=build \Users\Wei Liang\OneDrive\Desktop\VTTL Learning\SSF\ibfb3-ssf\workshop17\target\workshop17-0.0.1-SNAPSHOT.jar \Users\Wei Liang\OneDrive\Desktop\VTTL Learning\SSF\ibfb3-ssf\workshop17\target\workshop17.jar
+COPY --from=build /home/app/target/workshop17-0.0.1-SNAPSHOT.jar /usr/local/lib/workshop17.jar
 
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "/usr/local/lib/workshop17.jar"]
